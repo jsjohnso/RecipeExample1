@@ -1,0 +1,158 @@
+Name: DataStores
+Type: DataStoresCategoryFolder
+Children:
+- Name: RecipeDB
+  Id: g=d702ef4ef8adbf537fa1aac24c54b305
+  Type: ODBCStore
+  Children:
+  - Name: Tables
+    Type: BaseObjectType
+    Children:
+    - Name: Table1
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=7;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+    - Name: RecipeSchema
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=7;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /Temperature
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /RPM
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+    - Name: Motor1
+      Type: ODBCStoreTable
+      Children:
+      - Class: Reference
+        Target: ns=7;i=12
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=15
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=21
+        Direction: Forward
+      - Class: Reference
+        Target: ns=7;i=20
+        Direction: Forward
+      - Name: Columns
+        Type: BaseObjectType
+        Children:
+        - Name: Name
+          Type: StoreColumn
+          DataType: String
+          Value: ""
+        - Name: /Temperature
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+        - Name: /RPM
+          Type: StoreColumn
+          DataType: Int32
+          Value: 0
+  - Name: Type
+    Type: PropertyType
+    DataType: DBMSType
+    Value: 2
+  - Name: Username
+    Type: PropertyType
+    DataType: String
+    Value: "sa"
+  - Name: Password
+    Type: PropertyType
+    DataType: Password
+    Value: "Rockwell1"
+  - Name: MaxColumnNameLength
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: MaxColumnCount
+    Type: BaseDataVariableType
+    DataType: UInt32
+    AccessLevel: Read
+    Value: 0
+  - Name: DataTypeCompatibilityMap
+    Type: BaseDataVariableType
+    DataType: NodeId
+    AccessLevel: Read
+    ValueRank: OneOrMoreDimensions
+    ArrayDimensions: [0,0]
+    Value: {"Type":12,"Dimensions":[0,0],"Body":[]}
+  - Name: Status
+    Type: PropertyType
+    DataType: StoreStatus
+    AccessLevel: Read
+    Value: 2
+  - Class: Reference
+    Target: ns=7;i=22
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=6
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=8
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=25
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=38
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=41
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=57
+    Direction: Forward
+  - Class: Reference
+    Target: ns=7;i=59
+    Direction: Forward
+  - Name: DSN
+    Type: PropertyType
+    DataType: String
+    Value: "RecipeDSN"

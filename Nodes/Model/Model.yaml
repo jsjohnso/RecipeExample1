@@ -1,0 +1,15 @@
+Name: Model
+Type: ModelCategoryFolder
+Children:
+- Name: Motor1
+  Id: g=53b581ccf8dccc7e66d033b5e8579a34
+  Type: BaseObjectType
+  Children:
+  - Name: Temperature
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0
+  - Name: RPM
+    Type: BaseDataVariableType
+    DataType: Int32
+    Value: 0

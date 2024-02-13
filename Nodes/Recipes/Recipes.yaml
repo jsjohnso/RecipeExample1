@@ -1,0 +1,88 @@
+Name: Recipes
+Type: RecipesCategoryFolder
+Children:
+- Name: RecipeSchema
+  Id: g=dbb19f1b5d2bd1dffb1f601ccc1815df
+  Type: RecipeSchema
+  Children:
+  - Name: Root
+    Type: BaseObjectType
+    Children:
+    - Name: Temperature
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: RPM
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+  - Class: Reference
+    Target: ns=15;i=27
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=33
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=31
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=44
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=35
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=37
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=76
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=53
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=62
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=55
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=58
+    Direction: Forward
+  - Class: Reference
+    Target: ns=15;i=60
+    Direction: Forward
+  - Name: Store
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/RecipeExample1/DataStores/RecipeDB"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: "/Types/ObjectTypes/BaseObjectType/Store"
+  - Name: TargetNode
+    Type: NodePointer
+    DataType: NodeId
+    Value: "/Objects/RecipeExample1/Model/Motor1"
+    Children:
+    - Name: Kind
+      Type: PropertyType
+      DataType: NodeId
+      Value: {"IdType":0,"Id":0,"Namespace":-1}
+  - Name: TableName
+    Type: BaseDataVariableType
+    DataType: String
+    Value: "Motor1"
+  - Name: EditModel
+    Id: g=6c7f043f94c97d974de46a38785d9703
+    Type: BaseObjectType
+    Children:
+    - Name: Temperature
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
+    - Name: RPM
+      Type: BaseDataVariableType
+      DataType: Int32
+      Value: 0
